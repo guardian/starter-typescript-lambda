@@ -8,7 +8,13 @@
   "license": "MIT",
   "devDependencies": {
     "@guardian/prettier": "^5.0.0",
-    "prettier": "^3.0.3"
+    "@types/aws-lambda": "^8.10.119",
+    "@types/node": "^20.6.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
   },
-  "prettier": "@guardian/prettier"
+  "prettier": "@guardian/prettier",
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  }
 }
