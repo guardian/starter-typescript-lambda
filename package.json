@@ -1,20 +1,24 @@
 {
-  "name": "starter-typescript-lambda",
-  "version": "1.0.0",
-  "description": "A step by step guide on how to bootstrap, integrate and deploy a TypeScript lambda using the GuCDK, GitHub actions and Riff Raff.",
-  "main": "index.js",
-  "repository": "https://github.com/guardian/starter-typescript-lambda",
-  "author": "Andrea Diotallevi <andrea.diotallevi@guardian.co.uk>",
-  "license": "MIT",
-  "devDependencies": {
-    "@guardian/prettier": "^5.0.0",
-    "@types/aws-lambda": "^8.10.119",
-    "@types/node": "^20.6.0",
-    "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
-  },
-  "prettier": "@guardian/prettier",
-  "dependencies": {
-    "aws-lambda": "^1.0.7"
-  }
+	"name": "starter-typescript-lambda",
+	"version": "1.0.0",
+	"description": "A step by step guide on how to bootstrap, integrate and deploy a TypeScript lambda using the GuCDK, GitHub actions and Riff Raff.",
+	"main": "index.js",
+	"repository": "https://github.com/guardian/starter-typescript-lambda",
+	"author": "Andrea Diotallevi <andrea.diotallevi@guardian.co.uk>",
+	"license": "MIT",
+	"devDependencies": {
+		"@guardian/prettier": "^5.0.0",
+		"@types/aws-lambda": "^8.10.119",
+		"@types/node": "^20.6.0",
+		"esbuild": "^0.19.2",
+		"prettier": "^3.0.3",
+		"typescript": "^5.2.2"
+	},
+	"prettier": "@guardian/prettier",
+	"dependencies": {
+		"aws-lambda": "^1.0.7"
+	},
+	"scripts": {
+		"build": "yarn esbuild --bundle --platform=node --target=node18 --outfile=dist/index.js src/index.ts"
+	}
 }
