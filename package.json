@@ -5,5 +5,10 @@
   "main": "index.js",
   "repository": "https://github.com/guardian/starter-typescript-lambda",
   "author": "Andrea Diotallevi <andrea.diotallevi@guardian.co.uk>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@guardian/prettier": "^5.0.0",
+    "prettier": "^3.0.3"
+  },
+  "prettier": "@guardian/prettier"
 }
