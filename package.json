@@ -1,0 +1,9 @@
+{
+  "name": "starter-typescript-lambda",
+  "version": "1.0.0",
+  "description": "A step by step guide on how to bootstrap, integrate and deploy a TypeScript lambda using the GuCDK, GitHub actions and Riff Raff.",
+  "main": "index.js",
+  "repository": "https://github.com/guardian/starter-typescript-lambda",
+  "author": "Andrea Diotallevi <andrea.diotallevi@guardian.co.uk>",
+  "license": "MIT"
+}
